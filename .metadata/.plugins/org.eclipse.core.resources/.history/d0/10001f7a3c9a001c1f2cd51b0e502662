@@ -1,0 +1,5 @@
+package com.e2eTests.automatedTests.demoQA.doubleClick.pageObjects;
+
+public class doubleClickPageObjects {
+
+}

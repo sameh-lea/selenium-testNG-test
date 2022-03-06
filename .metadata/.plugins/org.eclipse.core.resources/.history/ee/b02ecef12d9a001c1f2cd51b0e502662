@@ -1,0 +1,15 @@
+@tag
+Feature: Switch to alert 
+  ETQ utilisateur je souhaite accepter le pop up alerte  
+
+  @tag1
+  Scenario: Title of your scenario
+    Given je me connecte sur application demo qa "url"
+    And some other precondition
+    When I complete action
+    And some other action
+    And yet another action
+    Then I validate the outcomes
+    And check more outcomes
+
+

@@ -1,0 +1,23 @@
+@demo
+Feature: Tests of DemoQa
+  ETQ utilisateurs je vais faire une liste des tests sur le site demoQa
+
+  @Mousehover
+  Scenario: put mouse on web element 
+    Given je me connecte sur application demo qa 
+    When je met le souris sur Main item2 
+    And some other action
+    And yet another action
+    Then I validate the outcomes
+    And check more outcomes
+
+ # @tag2
+ # Scenario Outline: Title of your scenario outline
+ #   Given I want to write a step with <name>
+  #  When I check for the <value> in step
+  #  Then I verify the <status> in step
+
+   # Examples: 
+   #   | name  | value | status  |
+   #   | name1 |     5 | success |
+   #   | name2 |     7 | Fail    |

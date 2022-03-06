@@ -1,0 +1,25 @@
+package com.todo.utils;
+
+import java.io.IOException;
+
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
+
+public class SetUp extends BasePage {
+
+	public SetUp() throws IOException {
+		super();
+		
+	}
+	@Parameters({"browser"})
+	@BeforeMethod 
+	
+	public void setUpTest(String browser) {
+		//instantiation from home class
+		initialization(browser);
+		driver.get(prop.getProperty("url"));
+	}
+	
+	
+
+}

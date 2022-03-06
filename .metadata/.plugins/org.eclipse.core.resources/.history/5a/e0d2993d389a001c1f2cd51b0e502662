@@ -1,0 +1,12 @@
+@tag
+Feature: Double click 
+  ETQ utilisateur je souhaite clicker deux fois 
+
+  @doubleClickAction
+  Scenario: Title of your scenario
+    Given je connecte sur application demoqa "urlDoubleclick"
+    When je click deux fois sur le bouton 
+    And some other action
+    Then I validate the outcomes
+   
+

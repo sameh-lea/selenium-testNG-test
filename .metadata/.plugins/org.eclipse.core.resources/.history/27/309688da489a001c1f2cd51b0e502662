@@ -1,0 +1,24 @@
+package com.e2eTests.automatedTests.demoQA.doubleClick.pageObjects;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+
+public class doubleClickPageObjects {
+
+	/* Locator */
+	final static String BTN_ID = "doubleClickBtn ";
+
+	/* FindBy */
+    @FindBy(how = How.ID, using =BTN_ID)
+	public static WebElement button;
+
+	/* Method */
+    public void doubleClick () {
+		Actions actions = new Actions(driver);
+
+    	actions.doubleClick(button).perform();
+    }
+
+}

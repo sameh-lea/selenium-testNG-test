@@ -1,0 +1,38 @@
+package com.e2eTests.automatedTests.demoQA.alert.pageObjects;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+
+import com.e2eTests.automatedTests.utils.CommonMethods;
+
+public class alertPageObjects {
+
+	/* instance from CommonMethod */
+
+	CommonMethods common = new CommonMethods();
+
+	/* locator */
+	final static String BOUTTON_ID = "alertButton";
+
+	/* FindBy */
+	@FindBy(how = How.ID, using = BOUTTON_ID)
+	public static WebElement boutton;
+
+	/* Method */
+	public void clickBoutton() {
+		boutton.click();
+	}
+
+	public void acceptPopUP() {
+		common.acceptAlert();
+
+	}
+
+	public void getTitle() {
+
+		common.getTitle();
+
+	}
+}

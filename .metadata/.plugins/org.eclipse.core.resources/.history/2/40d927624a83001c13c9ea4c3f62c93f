@@ -1,0 +1,38 @@
+package testCasesExercice;
+
+import java.util.concurrent.TimeUnit;
+
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class RightClickMe {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+
+		// Open url
+		driver.get("https://demoqa.com/buttons");
+		//Find element 
+		WebElement butonright = driver.findElement(By.id("rightClickBtn"));
+		
+		//Use class Actions 
+		Actions actions = new Actions(driver);
+		actions.contextClick(butonright).perform();
+		
+		//Verify result 
+		WebElement rightres =driver.findElement(By.id("rightClickMessage"));
+		
+		Assert.assertTrue(rightres.getText().contains("right"));
+		System.out.println(" assert true worked ");
+		driver.quit();
+
+
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package com.e2eTests.automatedTests.demoQA.doubleClick.stepDefinition;
+
+public class doubleClickStepDefinition {
+	
+	
+	@Given("^je connecte sur application demoqa \"([^\"]*)\"$")
+	public void jeConnecteSurApplicationDemoqa(String arg1) throws Throwable {
+	  
+	}
+
+	@When("^je click deux fois sur le bouton$")
+	public void jeClickDeuxFoisSurLeBouton() throws Throwable {
+	
+	}
+
+	@Then("^je vérifie que un text est affiché$")
+	public void jeVérifieQueUnTextEstAffiché() throws Throwable {
+
+	}
+
+
+
+}

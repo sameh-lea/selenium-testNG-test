@@ -1,0 +1,43 @@
+package com.e2eTests.automatedTests.demoQA.doubleClick.stepDefinition;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+import com.e2eTests.automatedTests.demoQA.doubleClick.pageObjects.doubleClickPageObjects;
+import com.e2eTests.automatedTests.demoQA.mouseHover.pageObjects.mouseHoverPageObjects;
+import com.e2eTests.automatedTests.utils.Setup;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class doubleClickStepDefinition {
+
+	public WebDriver driver = null;
+
+	doubleClickPageObjects dco = new doubleClickPageObjects();
+
+	/* init element */
+
+	public doubleClickStepDefinition() {
+		driver = Setup.driver;
+		PageFactory.initElements(driver, doubleClickPageObjects.class);
+	}
+
+	@Given("^je connecte sur application demoqa \"([^\"]*)\"$")
+	public void jeConnecteSurApplicationDemoqa(String arg1) throws Throwable {
+		commonmethods.readFileConfig(arg1);
+
+	}
+
+	@When("^je click deux fois sur le bouton$")
+	public void jeClickDeuxFoisSurLeBouton() throws Throwable {
+
+	}
+
+	@Then("^je vérifie que un text est affiché$")
+	public void jeVérifieQueUnTextEstAffiché() throws Throwable {
+
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.todo.utils;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
+
+public class BasePage {
+	public static WebDriver drivers;
+	public static Properties prop ; 
+	public static EventFiringWebDriver e_driver;
+	
+}

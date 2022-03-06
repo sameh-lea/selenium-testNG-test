@@ -1,0 +1,14 @@
+package com.todo.tests;
+
+import java.io.IOException;
+
+import com.todo.utils.BasePage;
+
+public class AddToDoTest extends BasePage {
+
+	public AddToDoTest() throws IOException {
+		super();
+	}
+	
+
+}

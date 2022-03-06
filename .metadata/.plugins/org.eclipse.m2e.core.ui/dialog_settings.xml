@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\21626\eclipse-workspace\fzp-selenium-exercice"/>
+			<item value="C:\Users\21626\eclipse-workspace\Pratices"/>
+			<item value="C:\Users\21626\eclipse-workspace\Nouveau dossier"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="internal"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="frw_testNg.frw_testNg"/>
+			<item value="frw_cucumber_automatedtest.frw_cucumber_automatedtest"/>
+			<item value="fzp_selenium_exercice.fzp_selenium_exercice"/>
+		</list>
+		<list key="groupId">
+			<item value="frw-testNg"/>
+			<item value="frw-cucumber-automatedtest"/>
+			<item value="fzp-selenium-exercice"/>
+		</list>
+		<list key="artifactId">
+			<item value="frw-testNg"/>
+			<item value="frw-cucumber-automatedtest"/>
+			<item value="fzp-selenium-exercice"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\21626\Documents\Learning-process\Selenium+zied\Session23-Level3-seleniumgrid-21022022\nv\CucumberFramework-master"/>
+			<item value="C:\Users\21626\Documents\Learning-process\Selenium+zied\Session23-Level3-seleniumgrid-21022022\frw-selenium-testNG"/>
+			<item value="C:\Users\21626\Documents\Learning-process\Selenium+zied\Session23-Level3-seleniumgrid-21022022\frw-cucumber-automated-test"/>
+			<item value="C:\Users\21626\Documents\Learning-process\Selenium+zied\Session23-Level3-seleniumgrid-21022022\canalPlus-exercices"/>
+			<item value="C:\Users\21626\Documents\Learning-process\Selenium+zied\Session23-Level3-seleniumgrid-21022022\frw-selenium-grid"/>
+			<item value="C:\Users\21626\eclipse-workspace\draft\frw-cucumber-automatedtest"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

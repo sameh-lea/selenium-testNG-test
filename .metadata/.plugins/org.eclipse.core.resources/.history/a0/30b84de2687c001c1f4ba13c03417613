@@ -1,0 +1,30 @@
+package testCases;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Alert {
+
+	public static void main(String[] args) {
+
+		System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+
+
+		// Open url
+		driver.get("https://demoqa.com/alerts");
+		
+		driver.findElement(By.id("alertButton")).click();
+		
+		//Accept alert 
+		
+		driver.switchTo().alert().accept();
+		
+		String title = driver.getTitle();
+		System.out.println ("Title of the app is "+ title);
+		driver.quit();
+		
+	}
+
+}

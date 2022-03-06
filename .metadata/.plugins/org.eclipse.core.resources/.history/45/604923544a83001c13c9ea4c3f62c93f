@@ -1,0 +1,37 @@
+package testCasesExercice;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+import junit.framework.Assert;
+
+public class DoubleClick {
+
+	public static void main(String[] args) {
+
+		System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+
+		// Open url
+		driver.get("https://demoqa.com/buttons");
+		
+		//Double click on button 
+        WebElement button= driver.findElement(By.id("doubleClickBtn"));
+		Actions actions = new Actions(driver);
+		actions.doubleClick(button).perform();
+		
+		//Verify that the button is cliqued 
+		WebElement msg = driver.findElement(By.id("doubleClickMessage"));
+		String res=msg.getText();
+		Assert.assertEquals("You have done a double click", msg.getText());
+		driver.quit();
+		
+	
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.e2eTests.automatedTests.demoQA.alert.pageObjects;
+
+public class alertPageObjects {
+
+	/* locator */
+	final static String BOUTTON_ID = "alertButton";
+
+	/* FindBy */
+
+	/* Method */
+
+}

@@ -1,0 +1,26 @@
+package com.e2eTests.automatedTests.demoQA.alert.stepDefinition;
+
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class alertStepDefinition {
+	
+	
+	@When("^je clique sur le bouton$")
+	public void jeCliqueSurLeBouton() throws Throwable {
+	 
+	}
+
+	@When("^je fais accepter le pop up$")
+	public void jeFaisAccepterLePopUp() throws Throwable {
+	   
+	}
+
+	@Then("^je vérifie le titre de la page$")
+	public void jeVérifieLeTitreDeLaPage() throws Throwable {
+	 
+	}
+
+
+
+}

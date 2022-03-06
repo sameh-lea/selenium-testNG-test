@@ -1,0 +1,9 @@
+package com.e2eTests.automatedTests.demoQA.mouseHover.pageObjects;
+
+public class mouseHoverPageObjects {
+	
+	/* locator */
+	final static String ITEM2_XPATH = "//*[@id='nav']/li[2]/a";
+	
+
+}

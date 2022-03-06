@@ -1,0 +1,45 @@
+package com.e2eTests.automatedTests.demoQA.alert.stepDefinition;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+import com.e2eTests.automatedTests.demoQA.alert.pageObjects.alertPageObjects;
+import com.e2eTests.automatedTests.demoQA.mouseHover.pageObjects.mouseHoverPageObjects;
+import com.e2eTests.automatedTests.utils.CommonMethods;
+import com.e2eTests.automatedTests.utils.Setup;
+
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class alertStepDefinition {
+	
+	public WebDriver driver = null;
+	private CommonMethods commonmethods = new CommonMethods();
+	private alertPageObjects apo = new alertPageObjects();
+	
+	public alertStepDefinition() {
+		driver = Setup.driver;
+		PageFactory.initElements(driver, .class);
+	}
+	
+	@When("^je clique sur le bouton$")
+	public void jeCliqueSurLeBouton() throws Throwable {
+		apo.clickBoutton();
+	 
+	}
+
+	@When("^je fais accepter le pop up$")
+	public void jeFaisAccepterLePopUp() throws Throwable {
+		apo.acceptPopUP();
+	   
+	}
+
+	@Then("^je vérifie le titre de la page$")
+	public void jeVérifieLeTitreDeLaPage() throws Throwable {
+		apo.getTitle();
+	 
+	}
+
+
+
+}

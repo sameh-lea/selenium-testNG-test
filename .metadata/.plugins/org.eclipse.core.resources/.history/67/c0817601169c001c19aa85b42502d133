@@ -1,0 +1,25 @@
+package com.todo.tests;
+
+import java.io.IOException;
+
+import org.testng.annotations.Test;
+
+import com.todo.pages.ToDoPage;
+import com.todo.utils.SetUp;
+
+public class AddToDoTest extends SetUp {
+
+	public AddToDoTest() throws IOException {
+		super();
+	}
+
+	ToDoPage toDoPage;
+
+	@Test
+	public void iAddMyToDo() throws IOException {
+		toDoPage = new ToDoPage();
+		toDoPage.fillToDo(prop.getProperty("todo"));
+
+	}
+
+}

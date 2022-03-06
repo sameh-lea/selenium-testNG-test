@@ -1,0 +1,12 @@
+@tag
+Feature: Double click 
+  ETQ utilisateur je souhaite clicker deux fois 
+
+  @doubleClickAction
+  Scenario: Title of your scenario
+    Given I want to write a step with precondition
+    When I complete action
+    And some other action
+    Then I validate the outcomes
+   
+

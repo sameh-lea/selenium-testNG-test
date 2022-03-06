@@ -1,0 +1,29 @@
+package com.todo.pages;
+
+import java.io.IOException;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
+
+import com.todo.utils.BasePage;
+
+public class ToDoPage extends BasePage {
+	
+	public ToDoPage() throws IOException {
+		
+		PageFactory.initElements(driver, this);
+		
+		/* Locators */ 
+		final static String  = "doubleClickMessage";
+
+		/* FindBy */
+	    @FindBy(how = How.XPATH, using = )
+		public static WebElement ;	
+		
+	}
+	
+	
+
+}

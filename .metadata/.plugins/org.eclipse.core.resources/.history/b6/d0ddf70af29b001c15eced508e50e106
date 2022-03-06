@@ -1,0 +1,29 @@
+package com.todo.utils;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
+
+public class BasePage {
+	public static WebDriver drivers;
+	public static Properties prop ; 
+	public static EventFiringWebDriver e_driver;
+	public BasePage() throws IOException {
+		
+		prop = new Properties();
+		FileInputStream fis = null;
+		try {
+			fis = new FileInputStream("src/main/java/com/todo/configs");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
+		prop.load(fis);
+		
+		
+	}
+}

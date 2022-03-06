@@ -1,0 +1,5 @@
+package com.e2eTests.automatedTests.demoQA.mouseHover.pageObjects;
+
+public class mouseHoverPageObjects {
+
+}

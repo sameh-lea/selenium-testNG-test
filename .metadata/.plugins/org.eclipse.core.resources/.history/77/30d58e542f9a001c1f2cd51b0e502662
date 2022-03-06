@@ -1,0 +1,5 @@
+package com.e2eTests.automatedTests.demoQA.alert.pageObjects;
+
+public class alertPageObjects {
+
+}

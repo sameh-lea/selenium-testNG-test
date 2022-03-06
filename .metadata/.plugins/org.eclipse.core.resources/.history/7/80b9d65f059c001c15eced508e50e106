@@ -1,0 +1,34 @@
+package com.todo.pages;
+
+import java.io.IOException;
+import java.security.KeyStore.PrivateKeyEntry;
+
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
+
+import com.todo.utils.BasePage;
+
+public class ToDoPage extends BasePage {
+
+	public ToDoPage() throws IOException {
+
+		PageFactory.initElements(driver, this);
+	}
+
+	/* Locators */
+	final static String INPUT_FIELD = "//input[@ng-model='newTodo']";
+
+	/* FindBy */
+	@FindBy(how = How.XPATH, using = INPUT_FIELD)
+	public static WebElement input;
+
+	/* Methods */
+	public void fillToDo(String toDoText) {
+		input.sendKeys(toDoText);
+		input.sendKeys(Keys.ENTER);
+	}
+
+}

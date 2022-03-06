@@ -1,0 +1,12 @@
+package com.todo.utils;
+
+import java.io.IOException;
+
+public class SetUp extends BasePage {
+
+	public SetUp() throws IOException {
+		super();
+		
+	}
+
+}

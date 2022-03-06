@@ -1,0 +1,20 @@
+package com.todo.pages;
+
+import java.io.IOException;
+
+import org.openqa.selenium.support.PageFactory;
+
+import com.todo.utils.BasePage;
+
+public class ToDoPage extends BasePage {
+	
+	public ToDoPage() throws IOException {
+		PageFactory.initElements(driver, this);
+		
+		
+		
+	}
+	
+	
+
+}

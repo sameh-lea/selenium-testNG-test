@@ -1,0 +1,35 @@
+package com.e2eTests.automatedTests.demoQA.doubleClick.pageObjects;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+
+import com.e2eTests.automatedTests.utils.CommonMethods;
+
+public class doubleClickPageObjects {
+	
+	
+	CommonMethods common = new CommonMethods();
+	
+	/* Locator */
+	final static String BTN_ID = "doubleClickBtn ";
+	final static String TEXT_ID = "doubleClickMessage";
+
+	/* FindBy */
+    @FindBy(how = How.ID, using = BTN_ID)
+	public static WebElement button;
+    @FindBy ( how = How.ID, using = TEXT_ID)
+    public static WebElement message; 
+
+	/* Method */
+    public void doubleClick () {
+		common.doudleClick(button); 	
+    }
+    
+    public void getMsg() {
+    	common.getText(message);
+    }
+    
+
+}

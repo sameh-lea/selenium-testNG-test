@@ -1,0 +1,50 @@
+package com.todo.pages;
+
+import java.io.IOException;
+
+
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
+
+import com.todo.utils.BasePage;
+
+public class ToDoPage extends BasePage {
+
+	public ToDoPage() throws IOException {
+
+		PageFactory.initElements(driver, this);
+	}
+
+	/* Locators */
+	final static String INPUT_FIELD = "//input[@ng-model='newTodo']";
+	final static String CHECK_INPUT_XPATH = "//label[.='Adopter les bonnes pratiques de test']";
+
+	/* FindBy */
+	@FindBy(how = How.XPATH, using = INPUT_FIELD)
+	public static WebElement input;
+	@FindBy ( how = How.XPATH, using =CHECK_INPUT_XPATH )
+	public static WebElement checkInputField;
+
+
+	/* Methods */
+	public void fillToDo(String toDoText) {
+		input.sendKeys(toDoText);
+		input.sendKeys(Keys.ENTER);
+	}
+	
+	public Boolean isElementDisplayed(WebElement element) {
+		Boolean isElementDisplayed = element.isDisplayed();
+		
+		return isElementDisplayed;
+		
+	}
+	public String checkElementContains(WebElement element) {
+		String elementToDo = element.getText();
+		
+		return elementToDo;
+		
+	}
+}
